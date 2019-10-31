@@ -1,7 +1,7 @@
 ---
 title: "Another Miscarriage"
 date: 2015-07-21
-draft: true
+draft: false
 toc: false
 images:
 categories: ["1st Trimester", "Loss", "Pregnancy"]
