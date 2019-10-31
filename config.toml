@@ -1,0 +1,6 @@
+baseURL = "https://thebsquared.com/"
+languageCode = "en"
+title = "The BSquared & Family"
+
+[params]
+    subtitle = "The story of becoming our family, and our travels as a family!"
