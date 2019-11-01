@@ -12,8 +12,9 @@
   </div>
   <div>
     <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
-    {{ range first 10 .Pages }}
-        {{ partial "summary.html.html" . }}
+    {{ range .Pages }}
+      <h2>{{ .Title }}</h2>
+      {{ partial "summary.html.html" . }}
     {{ end }}
   </div>
 </main>
