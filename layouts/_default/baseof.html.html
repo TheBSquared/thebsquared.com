@@ -9,7 +9,7 @@
     <title>{{ block "title" . }}
         {{ .Site.Title }}
         {{ end }}</title>{{ $style := resources.Get "css/bulma.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <script src="https://kit.fontawesome.com/c3258689af.js" crossorigin="anonymous"></script>
 </head>
 
