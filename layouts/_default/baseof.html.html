@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,53 @@
     {{ .Hugo.Generator }}
     <title>{{ block "title" . }}
         {{ .Site.Title }}
-    {{ end }}</title>
+        {{ end }}</title>{{ $style := resources.Get "css/bulma.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <script src="https://kit.fontawesome.com/c3258689af.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <section class="hero is-primary">
+        <nav class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active" href="/">
+                                Home
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </nav>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    {{ .Site.Title }}
+                </h1>
+                <h2 class="subtitle">
+                    {{ .Site.Params.subtitle }}
+                </h2>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container">
+                <nav class="tabs">
+                    <ul>
+                        {{ range .Site.Sections }}
+                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
     {{ block "main" . }}
     {{ end }}
     {{ block "footer" . }}
     {{ end }}
 </body>
+
 </html>
