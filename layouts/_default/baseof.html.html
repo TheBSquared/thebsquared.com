@@ -2,62 +2,60 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{ .Hugo.Generator }}
-    <title>{{ block "title" . }}
-        {{ .Site.Title }}
-        {{ end }}</title>{{ $style := resources.Get "css/bulma.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <script src="https://kit.fontawesome.com/c3258689af.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {{ .Hugo.Generator }}
+  <title>{{ block "title" . }}
+    {{ .Site.Title }}
+    {{ end }}</title>{{ $style := resources.Get "css/bulma.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <script src="https://kit.fontawesome.com/c3258689af.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="hero is-primary">
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active" href="/">
-                                Home
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    {{ .Site.Title }}
-                </h1>
-                <h2 class="subtitle">
-                    {{ .Site.Params.subtitle }}
-                </h2>
+  <section class="hero is-primary">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href="/">
+                Home
+              </a>
             </div>
+          </div>
         </div>
-        <div class="hero-foot">
-            <div class="container">
-                <nav class="tabs">
-                    <ul>
-                        {{ range .Site.Sections }}
-                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                        {{ end }}
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="content">
-            {{ block "main" . }}
+      </nav>
+    </div>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          {{ .Site.Title }}
+        </h1>
+        <h2 class="subtitle">
+          {{ .Site.Params.subtitle }}
+        </h2>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="container">
+        <nav class="tabs">
+          <ul>
+            {{ range .Site.Sections }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
-            {{ block "footer" . }}
-            {{ end }}
-        </div>
-    </section>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    {{ block "main" . }}
+    {{ end }}
+    {{ block "footer" . }}
+    {{ end }}
+  </section>
 </body>
 
 </html>
