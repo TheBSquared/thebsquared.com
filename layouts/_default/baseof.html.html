@@ -15,20 +15,19 @@
 
 <body>
     <section class="hero is-primary">
-        <nav class="hero-head">
+        <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
-                    <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-menu">
                         <div class="navbar-end">
                             <a class="navbar-item is-active" href="/">
                                 Home
                             </a>
                         </div>
                     </div>
-
                 </div>
             </nav>
-        </nav>
+        </div>
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -51,10 +50,14 @@
             </div>
         </div>
     </section>
-    {{ block "main" . }}
-    {{ end }}
-    {{ block "footer" . }}
-    {{ end }}
+    <section class="section">
+        <div class="content">
+            {{ block "main" . }}
+            {{ end }}
+            {{ block "footer" . }}
+            {{ end }}
+        </div>
+    </section>
 </body>
 
 </html>
