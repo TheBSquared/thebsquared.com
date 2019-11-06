@@ -11,6 +11,8 @@ authors: ["Brian"]
 
 We are always excited when it's time to venture off for a holiday. We normally take off with a caravan in tow. This time we were using the parent's RCI points to stay somewhere a little less rustic. 
 
+<!--more-->
+
 We opted to stay at Sandy Place Resort, in St. Lucia. We've been here before and loved it. This time was no different. What was different, however, was two kids with us. Our own of course. We're not creepy. Last time it was just B and I. This time, add Kyle and Ayla, 3 and a bit, and 11 weeks respectively. And my mom-in-law. I'll start with a review as a parent.
 
 ## If you're a parent...

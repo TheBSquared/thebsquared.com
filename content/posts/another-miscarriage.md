@@ -11,6 +11,8 @@ authors: ["Bianca"]
 
 I found out I was pregnant just before my son’s first birthday party. Since all the family were going to be around, we told them a few days after the party. Everyone was thrilled as they know I want a big family. Once again my parents were sad that they were going to be in another country for the pregnancy, but were super excited about another baby. They had really enjoyed their 3 week visit with Kyle for his first birthday.
 
+<!--more-->
+
 I went for my first scan early (6w5d) as my doctor knows my history and wanted to check that everything was ok. We even saw a heart flutter, which made me feel really positive. The baby measured 6w4d according to the scan, which was exactly what I was expecting, since I knew the date of conception because of my app. He scheduled me for another scan at 10 weeks, as then we would be able to see more etc. But things were positive.
 
 As with my previous pregnancies he put me on Ecotrin (a mild aspirin) and folic acid. This time he also put me on Utrogestan (a progesterone supplement). I had had my HcG and Progesterone levels tested, so assumed it had to do with that, although I didn’t get the actual figure from him.
