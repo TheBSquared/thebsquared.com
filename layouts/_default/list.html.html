@@ -5,7 +5,7 @@
 
     <p>{{ .Content }}</p>
   </div>
-  {{ range .Pages }}
+  {{ range .Pages.ByDate.Reverse }}
   <div class="content">
     <div>{{ partial "post-item.html" . }}</div>
     <div><a class="button is-small" href="{{ .RelPermalink }}">Read More...</a></div>

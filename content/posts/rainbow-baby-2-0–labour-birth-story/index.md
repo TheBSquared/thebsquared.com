@@ -1,6 +1,6 @@
 ---
 title: "Rainbow Baby 2.0 – Labour Birth Story"
-date: 2017-07-21
+date: "2017-07-21"
 draft: false
 toc: false
 images:

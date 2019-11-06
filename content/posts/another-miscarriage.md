@@ -1,6 +1,6 @@
 ---
 title: "Another Miscarriage"
-date: 2015-07-21
+date: "2015-07-21"
 draft: false
 toc: false
 images:

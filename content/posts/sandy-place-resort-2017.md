@@ -1,6 +1,6 @@
 ---
 title: "Sandy Place Resort 2017"
-date: 2017-10-18
+date: "2017-10-18"
 draft: false
 toc: false
 images:
