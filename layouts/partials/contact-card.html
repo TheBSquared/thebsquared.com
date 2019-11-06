@@ -1,11 +1,13 @@
 <div class="card">
     <div class="card-content">
         <div class="media-content">
-            <p class="title is-4">{{ .Title }}</p>
-            <p class="subtitle is-6">@johnsmith</p>
+            <p class="title is-4">{{ .Params.fullname }}</p>
+            <p class="subtitle is-6">{{ .Params.twitter }}</p>
         </div>
         <!-- <h2 class="subtitle">{{ .Title }}</h2> -->
-        <p>{{ .Summary }}</p>
+        <div class="content">
+            {{ .Summary }}
+        </div>
         <a class="button is-small" href="{{ .RelPermalink }}">About me</a>
     </div>
 </div>
