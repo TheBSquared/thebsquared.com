@@ -7,7 +7,7 @@
 <div class="content">
   <h1 class="title">Posts</h1>
 
-  {{ range (where .Site.RegularPages "Section" "posts") }}
+  {{ range first 2 (where .Site.RegularPages "Section" "posts") }}
   <div class="content">
     {{ partial "post-item.html" . }}
   </div>
